@@ -1,22 +1,27 @@
+import { Weather } from "./weather"
+
 export class Local {
 
-    private temp: number
-    private date: string
-    private time: string
-    private city: string
-    private humidity: number
-    private cloudiness: number
-    private rain: number
-    private wind_speedy: string
-    private wind_direction: number
-    private sunrise: string
-    private sunset: string
-    private condition_slug: string
-    private city_name: string
+   temp: number;
+   date: string;
+   time: string;
+   city: string;
+   humidity: number;
+   cloudiness: number;
+   rain: number;
+   wind_speedy: string;
+   wind_direction: number;
+   sunrise: string;
+   sunset: string;
+   condition_slug: string;
+   city_name: string;
+   days: Array<Weather>;
+   currently: string;
+   description: string
 
     constructor(temp: number, date: string, time: string, city: string, humidity: number, cloudiness: number,
         rain: number, wind_speedy: string, wind_direction: number, sunrise: string, sunset: string, condition_slug: string,
-        city_name: string) {
+        city_name: string, days:Array<Weather>, currently:string, description: string) {
         this.temp = temp;
         this.date = date;
         this.time = time;
@@ -30,10 +35,12 @@ export class Local {
         this.sunset = sunset;
         this.condition_slug = condition_slug;
         this.city_name = city_name;
-
+        this.days = days;
+        this.currently = currently
+        this.description = description
     }
 
-    static fromJson(json:JSON){
+    static fromJson(json:any){
         return new Local(
             json['results']['temp'],
             json['results']['date'],
@@ -47,8 +54,10 @@ export class Local {
             json['results']['sunrise'],
             json['results']['sunset'],
             json['results']['condition_slug'],
-            json['results']['city_name']
-
+            json['results']['city_name'],
+            json['results']['forecast'].map((element: any)=> Weather.fromJson(element)),
+            json['results']['currently'],
+            json['results']['description'],
         )
     }
 }
