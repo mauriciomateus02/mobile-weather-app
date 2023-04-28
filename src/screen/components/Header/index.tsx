@@ -15,11 +15,11 @@ const HeaderWeather = (props: HeaderProps) => {
         <Container style={{ width: '100%' }}>
             <View style={styled.viewHeader}>
                 <View style={styled.viewMap}>
-                    <Map height={30} width={30} style={styled.conponent} />
+                    <Map height={40} width={30} style={styled.conponent} />
                     <Text style={styled.text}>{props.text}</Text>
                     <Select width={15} height={15} style={styled.conponent} />
                 </View>
-                <Notification width={30} height={30} />
+                <Notification width={40} height={30} />
             </View>
         </Container>
     )

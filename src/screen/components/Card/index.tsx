@@ -19,11 +19,11 @@ const windowsWidth = Dimensions.get('window').width
 
 const CardWeather = (props: CardProps) => {
     return (
-        <Container style={{ backgroundColor: 'white', height: 217, width: 343 }}>
+        <Container style={{ height: 220, width: 343 }}>
             <View style={styled.view}>
                 <View style={styled.viewHeader}>
-                    <Text style={{ fontWeight: 'bold', fontSize: 20, marginLeft: 5 }}>Today</Text>
-                    <Text style={{ fontSize: 15, marginRight: 10, marginTop: 3 }}>{props.date}24,Apr</Text>
+                    <Text style={{ fontWeight: 'bold', fontSize: 20, marginLeft: 10 }}>Today</Text>
+                    <Text style={{ fontSize: 15, marginRight: 10, marginTop: 3, fontWeight:'500' }}>{props.date}24, Apr</Text>
                 </View>
                 <View style={styled.viewBody}>
                     <View style={styled.viewWeather}>

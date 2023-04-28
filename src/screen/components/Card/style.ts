@@ -15,7 +15,7 @@ export const styled = StyleSheet.create({
         borderRadius: 20,
         height:'80%',
         width:'100%',
-        backgroundColor: '#FF4500',
+       // backgroundColor: '#FF4500',
         flexDirection:'row',
         justifyContent:'space-around'
     },
@@ -23,8 +23,8 @@ export const styled = StyleSheet.create({
         borderRadius: 20,
         borderColor: 'black',
         height:'100%',
-        width:'24%',
-        backgroundColor: '#006400',
+        width:'20%',
+        //backgroundColor: '#006400',
         alignItems: 'center',
         justifyContent:'space-around'
     },

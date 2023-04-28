@@ -4,15 +4,16 @@ export const styled = StyleSheet.create({
     viewHeader:{
         justifyContent:'space-between',
         flexDirection:'row',
-        backgroundColor:'#A0522D',
+       // backgroundColor:'#A0522D',
         width:'80%',
-        
+        alignItems:'center',
+        marginBottom:10,
         
     },
     viewMap:{
         
         flexDirection:'row',
-        backgroundColor:'#B8860B',
+       // backgroundColor:'#B8860B',
         alignItems:'center'
 
     },
@@ -20,9 +21,10 @@ export const styled = StyleSheet.create({
         marginLeft:5
     },
     text:{
-        fontWeight:'bold',
-        fontSize:20,
-        marginRight: 5,
+        fontWeight:'500',
+        fontSize:18,
+        marginRight: 2,
+        marginLeft: 2,
         color:'white'
     }
 

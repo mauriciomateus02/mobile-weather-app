@@ -10,6 +10,8 @@ import Svg, { SvgUri } from 'react-native-svg';
 import Nuvem from '../assets/Union.svg'
 import Header from './components/Header';
 import HeaderWeather from './components/Header';
+import WeatherScreen from './components/Weather';
+import InformationModal from './components/Informations';
 
 
 export default function sky() {
@@ -30,7 +32,9 @@ export default function sky() {
         <ScrollView style={{backgroundColor:'black', flex:1}}>
             <Text>{data?.temp}</Text>
             <HeaderWeather text={data?.city_name}></HeaderWeather>
-            <CardWeather temp={data?.days[0].max} min={data?.days[0].min}><Text>123</Text></CardWeather>
+            <WeatherScreen temp={20} condiotion='cloudly_day' description='dia nublado' max={15} min={12}></WeatherScreen>
+            <InformationModal humidity={2} rain_probability={2} wind_speedy='25 km/h'></InformationModal>
+            <CardWeather temp={data?.days[0].max} min={data?.days[0].min} date={''}><Text>123</Text></CardWeather>
             <Nuvem width={200} height={200}/>
         </ScrollView>
     )
