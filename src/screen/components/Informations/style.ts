@@ -7,7 +7,7 @@ export const styled = StyleSheet.create({
         backgroundColor: '#808000',
         borderColor: 'white',
         borderRadius: 20,
-        width: '90%',
+        width: '100%',
         height: '70%',
         justifyContent: 'space-between',
         flexDirection: 'row',

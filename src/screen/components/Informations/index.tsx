@@ -14,7 +14,7 @@ type InfromationsProps = {
 const InformationModal = (props: InfromationsProps) => {
 
     return (
-        <Container style={{width:'90%'}}>
+        <Container style={{width: 343 }}>
             <View style={styled.body}>
                 <View style={styled.Statistic}>
                     <ProbabilyRain width={30} height={30} style={styled.image}/>
