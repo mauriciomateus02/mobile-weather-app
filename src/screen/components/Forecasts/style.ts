@@ -43,7 +43,6 @@ export const styled = StyleSheet.create({
         color: 'white',
         marginLeft: 20,
         fontSize: 15,
-        //backgroundColor:'black',
         width:'25%',
     },
     textTemp: {
