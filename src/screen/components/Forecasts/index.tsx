@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../Container";
-import { View, Text } from "react-native";
+import { View, Text, ViewStyle } from "react-native";
 import { styled } from "./style";
 import Calendar from '../../../assets/calendar.svg';
 import Rain from '../../../assets/rain.svg';
@@ -10,6 +10,7 @@ import Cloud from '../../../assets/Union.svg';
 import SunCloud from '../../../assets/SoleNuvem.svg';
 import Night from '../../../assets/night.svg';
 import NightCloud from '../../../assets/NoiteNuvem.svg'
+import LinearGradient from "react-native-linear-gradient";
 
 type ForecastsProps = {
     weekday: string
@@ -20,13 +21,15 @@ type ForecastsProps = {
 interface IContainerProps{
 
     children ?: React.ReactNode;
+    style?: ViewStyle;
+
 
 }
 
 const ForecastsBody = (props: IContainerProps) => {
 
     return (
-        <Container style={styled.body}>
+        <Container style={[styled.body,props.style]}>
             <View style={styled.view}>
                 <Text style={styled.text}>Next Forecast</Text>
                 <Calendar width={25} height={25} style={styled.imagem}/>

@@ -20,22 +20,26 @@ export const styled = StyleSheet.create({
         fontWeight: '500',
         color: 'white',
         fontSize: 64,
-        marginLeft: '8%',
+        marginLeft: '6%',
     },
     text: {
         color: 'white',
         fontSize: 18,
+        marginLeft:'2%',
 
     },
     imagen: {
         width: 300,
         height: 250,
+        
 
     },
     cloudlyNight: {
-        width: 340,
-        height: 250,
-        marginBottom: -20,
+        // width: 340,
+        // height: 250,
+        marginBottom: '-8%',
+        marginTop:'-5%'
+       
     },
     cloud: {
         marginTop: 5,
