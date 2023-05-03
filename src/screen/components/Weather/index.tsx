@@ -14,6 +14,7 @@ type WeatherProps = {
     condition?: string
     max?: number;
     min?: number;
+    currently?: string;
 }
 
 const WeatherScreen = (props: WeatherProps) => {
@@ -47,8 +48,7 @@ const WeatherScreen = (props: WeatherProps) => {
                             return <Cloud width={250} height={200} style={{ margin: '5%' }} />
                             break;
                         case 'fog':
-                            return <NightCloud width={500} height={300} style={styled.cloudlyNight} />
-
+                            return (props.currently != 'dia')?<NightCloud width={500} height={300} style={styled.cloudlyNight} /> : <SunCloud width={500} height={250} />
                             break;
                         default:
                             return <Text style={styled.text}>erro ao obter clima</Text>

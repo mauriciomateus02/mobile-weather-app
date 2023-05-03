@@ -20,11 +20,11 @@ export const styled = StyleSheet.create({
         fontWeight: '500',
         color: 'white',
         fontSize: 64,
-        marginLeft: '6%',
+        marginLeft: '7%',
     },
     text: {
         color: 'white',
-        fontSize: 18,
+        fontSize: 20,
         marginLeft:'2%',
 
     },

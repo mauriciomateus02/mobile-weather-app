@@ -44,26 +44,19 @@ export const conversor = (date?: string) => {
             mes = 'Undefined';
             break;
     }
-    return mes+', '+data?.[0];
+    return mes + ', ' + data?.[0];
 }
 
-export const conversorColor = (condition?: string) =>{
+export const conversorColor = (condition?: string, currently?: string) => {
 
-    if(condition == 'clear_day' || condition == 'cloudly_day'){ 
-        return ['#29B2DD','#33AADD','#2DC8EA'];
-    }
-    else{
-        return ['#08244F','#134CB5','#0B42AB'];   
-    }
+   return (condition == 'clear_day' || condition == 'cloudly_day' || condition == 'fog' && currently == 'dia') ?
+        ['#29B2DD', '#33AADD', '#2DC8EA'] : ['#08244F', '#134CB5', '#0B42AB'];
 }
 
-export const conversorColorContainer = (condition?: string) =>{
+export const conversorColorContainer = (condition?: string, currently?: string) => {
 
-    if(condition == 'clear_day' || condition == 'cloudly_day'){ 
-        return '#1654AB';
-    }
-    else{
-        return '#011D43';   
-    }
+    return (condition == 'clear_day' || condition == 'cloudly_day' || condition == 'fog' && currently == 'dia') ?
+        '#1654AB' : '#011D43';
+
 }
 

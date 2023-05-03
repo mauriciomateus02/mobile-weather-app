@@ -20,6 +20,7 @@ type CardProps = {
 };
 
 const CardWeather = (props: CardProps) => {
+    
     const [state, setState] = React.useState<Number>();
 
     return (

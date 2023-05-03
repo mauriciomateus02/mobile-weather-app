@@ -19,7 +19,7 @@ export class Local {
    days: Array<Weather>;
    currently: string;
    description: string;
-   colors: Array<string>;
+   
 
     constructor(temp: number, date: string, time: string, city: string, humidity: number, cloudiness: number,
         rain: number, wind_speedy: string, wind_direction: number, sunrise: string, sunset: string, condition_slug: string,
