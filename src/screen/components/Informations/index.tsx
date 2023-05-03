@@ -1,21 +1,22 @@
 import React from "react";
 import Container from "../Container";
-import { Text, View } from "react-native";
+import { Text, View, ViewStyle } from "react-native";
 import { styled } from "./style";
 import ProbabilyRain from '../../../assets/noun-rain.svg'
 import Humidity from '../../../assets/noun-humidity.svg'
 import WindSpeedy from '../../../assets/noun-wind.svg'
 
 type InfromationsProps = {
-    humidity: number;
-    rain_probability: number;
-    wind_speedy: string;
+    humidity?: number;
+    rain_probability?: number;
+    wind_speedy?: string;
+    style?: ViewStyle; 
 }
 const InformationModal = (props: InfromationsProps) => {
 
     return (
-        <Container style={{width: 343 }}>
-            <View style={styled.body}>
+        <Container style={{width: 343, marginBottom:-10}}>
+            <View style={[styled.body,props.style]}>
                 <View style={styled.Statistic}>
                     <ProbabilyRain width={30} height={30} style={styled.image}/>
                     <Text style={styled.text}>{props.rain_probability+'%'}</Text>

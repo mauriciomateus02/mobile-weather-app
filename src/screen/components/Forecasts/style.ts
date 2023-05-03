@@ -4,7 +4,6 @@ import { StyleSheet } from "react-native";
 export const styled = StyleSheet.create({
     body: {
         borderRadius: 20,
-        backgroundColor: '#6A5ACD',
         width: 343,
         marginBottom:20,
 

@@ -1,3 +1,4 @@
+import { Colors } from "react-native/Libraries/NewAppScreen";
 import { Weather } from "./weather"
 
 export class Local {
@@ -17,7 +18,8 @@ export class Local {
    city_name: string;
    days: Array<Weather>;
    currently: string;
-   description: string
+   description: string;
+   colors: Array<string>;
 
     constructor(temp: number, date: string, time: string, city: string, humidity: number, cloudiness: number,
         rain: number, wind_speedy: string, wind_direction: number, sunrise: string, sunset: string, condition_slug: string,
@@ -36,8 +38,9 @@ export class Local {
         this.condition_slug = condition_slug;
         this.city_name = city_name;
         this.days = days;
-        this.currently = currently
-        this.description = description
+        this.currently = currently;
+        this.description = description;
+
     }
 
     static fromJson(json:any){
@@ -60,4 +63,5 @@ export class Local {
             json['results']['description'],
         )
     }
+
 }

@@ -7,7 +7,7 @@ import Map from '../../../assets/Map.svg';
 import Select from '../../../assets/Vector.svg';
 
 type HeaderProps = {
-    text: string;
+    text?: string;
 }
 
 const HeaderWeather = (props: HeaderProps) => {
