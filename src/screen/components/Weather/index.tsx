@@ -2,12 +2,13 @@ import React from 'react';
 import Container from '../Container';
 import { Image, Text, View } from 'react-native';
 import { styled } from './style';
-import SunCloud from '../../../assets/SunCloudWeather.svg'
-import Cloud from '../../../assets/cloud.svg'
-import NightCloud from '../../../assets/Nightcloud.svg'
-import Sun from '../../../assets/SunHappy.svg'
-import Night from '../../../assets/Lua.svg'
-import Rain from '../../../assets/cloudRain.svg'
+import SunCloud from '../../../assets/SunCloudWeather.svg';
+import Cloud from '../../../assets/cloud.svg';
+import NightCloud from '../../../assets/Nightcloud.svg';
+import Sun from '../../../assets/SunHappy.svg';
+import Night from '../../../assets/Lua.svg';
+import Rain from '../../../assets/cloudRain.svg';
+import Storm from '../../../assets/StormCloud.svg';
 type WeatherProps = {
     temp?: number;
     description?: string;
@@ -49,6 +50,9 @@ const WeatherScreen = (props: WeatherProps) => {
                             break;
                         case 'fog':
                             return (props.currently != 'dia')?<NightCloud width={500} height={300} style={styled.cloudlyNight} /> : <SunCloud width={500} height={250} />
+                            break;
+                        case 'storm':
+                            return <Storm width={400} height={250}/>
                             break;
                         default:
                             return <Text style={styled.text}>erro ao obter clima</Text>
