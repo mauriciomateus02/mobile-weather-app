@@ -19,10 +19,12 @@ Porém, para deixar os estados climatologicos mais completo foi adicionado as im
 
 Para realizar o build do App deverá ter as seguintes ferramentas 
 [NodeJS](https://nodejs.org/en), 
-[GIT](https://git-scm.com/)
-e o Editor de codígo de sua preferencia.
+[GIT](https://git-scm.com/), [Andoid Studio](https://developer.android.com/studio), [JDK11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html)
+e o Editor de código de sua preferencia.
 
-ao realizar o clone do projeto, você deverá informar os seguintes comandos no **GIT**
+(OBS.: não esqueça de configurar as variaveis de ambiente, JAVA_HOME e ANDROID_HOME)
+
+Ao realizar o clone do projeto, você deverá informar os seguintes comandos no **GIT**
 
 os comandos a seguir criará uma pasta chamada Weather, entrará nela e clonará o repositório
 
