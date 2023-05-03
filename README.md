@@ -13,7 +13,7 @@ Porém, para deixar os estados climatologicos mais completo foi adicionado as im
 <img src="src/assets/cloudRain.svg" width="150" height="150"/><img src="src/assets/Lua.svg" width="150" height="150"/><img src="src/assets/SunHappy.svg" width="150" height="150"/>
 
 <img src="src/assets/Nightcloud.svg" width="150" height="150"/> <img src="src/assets/cloud.svg" width="150" height="150"/> <img src="src/assets/SunCloudWeather.svg" width="150" height="150"/>
-<img src="src/aassets/StormCloud.svg" width="150" heigth="150"/>
+<img src="src/assets/StormCloud.svg" width="150" heigth="150"/>
 
 ## Instruções
 
