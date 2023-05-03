@@ -44,16 +44,13 @@ export const conversor = (date?: string) => {
             mes = 'Undefined';
             break;
     }
-    
     return mes+', '+data?.[0];
-
 }
 
 export const conversorColor = (condition?: string) =>{
 
     if(condition == 'clear_day' || condition == 'cloudly_day'){ 
         return ['#29B2DD','#33AADD','#2DC8EA'];
-        
     }
     else{
         return ['#08244F','#134CB5','#0B42AB'];   
@@ -64,7 +61,6 @@ export const conversorColorContainer = (condition?: string) =>{
 
     if(condition == 'clear_day' || condition == 'cloudly_day'){ 
         return '#1654AB';
-        
     }
     else{
         return '#011D43';   
