@@ -24,6 +24,7 @@ const CardWeather = (props: CardProps) => {
     const [state, setState] = React.useState<Number>();
 
     return (
+        //esse é card para os climas do dia atual, foram feitos de forma estatica por não existir retorno dessas informações
         <Container style={{ height: 220, width: 343, marginBottom: 30 }}>
             <View style={[styled.view, props.style]}>
                 <View style={styled.viewHeader}>

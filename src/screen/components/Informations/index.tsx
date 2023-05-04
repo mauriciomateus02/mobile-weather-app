@@ -13,7 +13,7 @@ type InfromationsProps = {
     style?: ViewStyle; 
 }
 const InformationModal = (props: InfromationsProps) => {
-
+    //esse componente é as informações de humidade, vento e possibilidade de chuva
     return (
         <Container style={{width: 343, marginBottom:-10}}>
             <View style={[styled.body,props.style]}>

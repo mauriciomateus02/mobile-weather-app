@@ -19,6 +19,7 @@ type WeatherProps = {
 }
 
 const WeatherScreen = (props: WeatherProps) => {
+    //esse componente é a exibição da imagem representativa do clima 
     return (
         <Container style={{ width: '100%' }}>
             <View style={styled.viewWeather}>
@@ -60,6 +61,7 @@ const WeatherScreen = (props: WeatherProps) => {
                     }
                 })
                     ()}
+                {/*esse componente exibe as informações sobre o clima*/}
                 <View style={styled.viewCondition}>
                     <Text style={styled.title}>{props.temp + '°'}</Text>
                     <Text style={styled.text}>{props.description}</Text>

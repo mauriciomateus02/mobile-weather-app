@@ -41,8 +41,8 @@ export default function sky() {
                         <ForecastsBody style={{ backgroundColor: conversorColorContainer(data?.condition_slug, data?.currently) }}>{data?.days.map((element: Weather, index: number) => { return <Forecast weekday={element.weekday} condition={element.condition} max={element.max} min={element.min} key={index}></Forecast> })}</ForecastsBody>
                     </ScrollView>
 
-                    : 
-                    <ActivityIndicator size="large" color='white' style={{alignSelf:'center',marginTop:'70%'}}/>
+                    :
+                    <ActivityIndicator size="large" color='white' style={{ alignSelf: 'center', marginTop: '70%' }} />
             }
 
         </LinearGradient>

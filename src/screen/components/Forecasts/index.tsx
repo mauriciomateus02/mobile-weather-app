@@ -27,7 +27,7 @@ interface IContainerProps{
 }
 
 const ForecastsBody = (props: IContainerProps) => {
-
+//esse card é onde os os climas dos dias posteriores estarão contidos 
     return (
         <Container style={[styled.body,props.style]}>
             <View style={styled.view}>
@@ -39,7 +39,7 @@ const ForecastsBody = (props: IContainerProps) => {
     )
 }
 const Forecast = (props: ForecastsProps) => {
-
+//esse componente é as previsões dos dias posteriores
     return (
         <Container style={styled.view}>
             {(() => {
